@@ -1,7 +1,7 @@
 FROM mnallago/jenkins:centos
 COPY ./ /usr/share/jenkins/ref/auto/
 USER root
-RUN chmod 777 -R /usr/share/jenkins/ref/addjobs
+RUN chmod 777 -R /usr/share/jenkins/ref/auto
 USER jenkins
 WORKDIR /usr/share/jenkins/ref/auto/
 RUN sleep 60
