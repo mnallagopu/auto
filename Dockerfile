@@ -1,5 +1,5 @@
 FROM mnallago/jenkins:centos
-COPY addjobs/ /usr/share/jenkins/ref/addjobs/
+COPY ./ /usr/share/jenkins/ref/addjobs/
 USER root
 RUN chmod 777 -R /usr/share/jenkins/ref/addjobs
 USER jenkins
